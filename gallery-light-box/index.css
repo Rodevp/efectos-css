@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    text-align: left;
+    width: 80%;
+    margin-bottom: 0.2rem;
+}
+
+.content hr {
+    background-color: purple;
+    height: 4px;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.item_gallery {
+    width: 30%;
+    height: 220px;
+    margin: 10px;
+    position: relative;
+}
+
+.img_gallery {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.gallery-img-1 {
+    background-image: url('./images/paisaje.jpg');
+}
+
+.gallery-img-2 {
+    background-image: url('./images/paisaje_2.jpg');
+}
+
+.gallery-img-3 {
+    background-image: url('./images/paisaje_3.jpg');
+}
+
+.gallery-img-4 {
+    background-image: url('./images/paisaje_4.jpg');
+}
+
+.gallery-img-5 {
+    background-image: url('./images/paisaje_5.jpg');
+}
+
+.gallery-img-6 {
+    background-image: url('./images/paisaje_6.jpg');
+}
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: transform 0.2s linear;
+    transform: scale(0);
+}
+
+.close-btn {
+    display: inline-flex;
+    width: 60px;
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+
+
+.box_1 .item_image_effect, .box_2 .item_image_effect, .box_3 .item_image_effect,
+.box_4 .item_image_effect, .box_5 .item_image_effect, .box_6 .item_image_effect {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_1 .item_image_effect {
+    background-image: url('./images/paisaje.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box_2 .item_image_effect {
+    background-image: url('./images/paisaje_2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.box_3 .item_image_effect {
+    background-image: url('./images/paisaje_3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box_4 .item_image_effect {
+    background-image: url('./images/paisaje_4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box_5 .item_image_effect {
+    background-image: url('./images/paisaje_5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box_6 .item_image_effect {
+    background-image: url('./images/paisaje_6.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box_1:target{
+    transform: scale(1);
+}
+
+.box_2:target {
+    transform: scale(1);
+}
+
+.box_3:target {
+    transform: scale(1);
+}
+
+.box_4:target {
+    transform: scale(1);
+}
+
+.box_5:target {
+    transform: scale(1);
+}
+
+.box_6:target {
+    transform: scale(1);
+}
