@@ -12,7 +12,6 @@ body {
     position: relative;
     background-image: url('./paisaje.jpg');
     background-size: cover;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -26,12 +25,12 @@ body {
     align-items: center;
     position: absolute;
     color: white;
-    transform: translateX(100%);
+    transform: translateX(100%) translateY(50%);
     transition: transform 0.3s linear;
 }
 
 .card:hover .card__effect {
-    transform: translateX(0);
+    transform: translateX(0) translateX(0);
 }
 
 
